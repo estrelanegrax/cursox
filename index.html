@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="#">
+        <img src="img1/logo.png" height="50" alt="Logo da empresa">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="registro-ponto-dropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Registro de Ponto
+                </a>
+                <div class="dropdown-menu" aria-labelledby="registro-ponto-dropdown">
+                    <a class="dropdown-item" href="#">Relógios de Ponto</a>
+                    <a class="dropdown-item" href="#">Softwares para Tratamento de Ponto</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="controle-acesso-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Controle de Acesso
+                </a>
+                <div class="dropdown-menu" aria-labelledby="controle-acesso-dropdown">
+                    <a class="dropdown-item" href="#">Software para Controle de Acesso</a>
+                    <a class="dropdown-item" href="#">Catraca</a>
+                    <a class="dropdown-item" href="#">Controladoras de Acesso</a>
+                    <a class="dropdown-item" href="#">Cancela</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contato-modal">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="contato-modal" tabindex="-1" aria-labelledby="contato-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content contato-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contato-modal-label">Contato</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Entre em contato conosco pelos seguintes meios:</p>
+        <ul>
+          <li>Telefone: (11) 1234-5678</li>
+          <li>E-mail: contato@empresa.com.br</li>
+        </ul>
+        <p>Unidades:</p>
+        <ul>
+          <li class="endereco">
+            <span class="endereco-titulo">Matriz</span>
+            <span class="endereco-info">Rua A, 123, Rio de Janeiro - RJ</span>
+            <span class="endereco-contato">Telefone: (21) 9876-5432 | E-mail: matriz@empresa.com.br</span>
+            <br>
+             <i class="fas fa-map-marker-alt"></i> Localização: <a href="#">Mapa</a>
+          </li>
+          <li class="endereco">
+            <span class="endereco-titulo">Filial 1</span>
+            <span class="endereco-info">Rua B, 456, Campos - RJ</span>
+            <span class="endereco-contato">Telefone: (22) 3456-7890 | E-mail: filial1@empresa.com.br</span>
+            <br>
+            <i class="fas fa-map-marker-alt"></i> Localização: <a href="#">Mapa</a>
+          </li>
+          <li class="endereco">
+            <span class="endereco-titulo">Filial 2</span>
+            <span class="endereco-info">Rua C, 789, Vitória - ES</span>
+            <span class="endereco-contato">Telefone: (27) 9876-5432 | E-mail: filial2@empresa.com.br</span>
+            <br>
+             <i class="fas fa-map-marker-alt"></i> Localização: <a href="#">Mapa</a>
+          </li>
+          <li class="endereco">
+            <span class="endereco-titulo">Filial 3</span>
+            <span class="endereco-info">Rua D, 012, Curitiba - PR</span>
+            <span class="endereco-contato">Telefone: (41) 3456-7890 | E-mail: filial3@empresa.com.br</span>
+            <br>
+            <i class="fas fa-map-marker-alt"></i> Localização: <a href="#">Mapa</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+    <div class="redes-sociais-container">
+        <ul class="redes-sociais">
+            <li class="item-redes-sociais">
+                <span class="icon"><i class="fa fa-facebook"></i></span>
+                <span class="titulo">Facebook</span>
+            </li>
+            <li class="item-redes-sociais">
+                <span class="icon"><i class="fa fa-twitter"></i></span>
+                <span class="titulo">Twitter</span>
+            </li>
+            <li class="item-redes-sociais">
+                <span class="icon"><i class="fa fa-whatsapp"></i></span>
+                <span class="titulo">Whatsapp</span>
+            </li>
+            <li class="item-redes-sociais">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                <span class="titulo">Linkedin</span>
+            </li>
+            <li class="item-redes-sociais">
+                <span class="icon"><i class="fa fa-instagram"></i></span>
+                <span class="titulo">Instagram</span>
+        </li>
+    </ul>
+</div>
+<div id="slide-container">
+  <div class="slide-item active">
+    <a href="#"><img src="https://picsum.photos/id/1018/600/400" alt="Descrição da imagem"></a>
+    <div class="slide-description">
+      <h3>Descrição da imagem 1</h3>
+      <p>Detalhes adicionais da imagem 1</p>
+    </div>
+  </div>
+  <div class="slide-item">
+    
+    <a href="#"><img src="https://picsum.photos/id/1015/600/400" alt="Descrição da imagem"></a>
+    <div class="slide-description">
+      <h3>Descrição da imagem 2</h3>
+      <p>Detalhes adicionais da imagem 2</p>
+    </div>
+  </div>
+  <div class="slide-item">
+   
+    <a href="#"><img src="https://picsum.photos/id/1004/600/400" alt="Descrição da imagem"></a>
+
+    <div class="slide-description">
+      <h3>Descrição da imagem 3</h3>
+      <p>Detalhes adicionais da imagem 3</p>
+    </div>
+  </div>
+  <div class="slide-item">
+    <a href="#"><img src="https://picsum.photos/id/1023/600/400" alt="Descrição da imagem"></a>
+
+    <div class="slide-description">
+      <h3>Descrição da imagem 4</h3>
+      <p>Detalhes adicionais da imagem 4</p>
+    </div>
+  </div>
+
+  <div class="slide-buttons">
+    <div class="slide-button active" onclick="changeSlide(1)"></div>
+    <div class="slide-button" onclick="changeSlide(2)"></div>
+    <div class="slide-button" onclick="changeSlide(3)"></div>
+    <div class="slide-button" onclick="changeSlide(4)"></div>
+  </div>
+
+  <div class="slide-arrow prev">&#10094;</div>
+  <div class="slide-arrow next">&#10095;</div>
+</div>
+
+  <br>
+  <div style="text-align: center;">
+  	<h2>Sobre Nós</h2>
+  <p style="max-width: 800px; margin: 0 auto;">Nós somos uma empresa especializada em soluções de controle de acesso e relógio de ponto para empresas de todos os tamanhos. Oferecemos uma ampla gama de produtos e serviços para garantir que a sua empresa tenha o melhor sistema de controle de presença e segurança disponível.</p>
+  <p style="max-width: 800px; margin: 0 auto;">Desde o início, nossa missão tem sido fornecer aos nossos clientes um serviço excepcional e os mais avançados sistemas de controle de ponto e acesso. Trabalhamos com as principais marcas do mercado e nossos técnicos são altamente treinados e experientes em todos os aspectos do controle de acesso e relógio de ponto.</p>
+  <p style="max-width: 800px; margin: 0 auto;">Oferecemos uma variedade de produtos, desde relógios de ponto tradicionais até soluções de controle de acesso baseadas em biometria, cartão e código PIN. Além disso, fornecemos software personalizado para atender às necessidades específicas de sua empresa.</p>
+  <p style="max-width: 800px; margin: 0 auto;">Se você está procurando uma solução de controle de acesso e presença confiável e avançada, entre em contato conosco. Teremos prazer em ajudar a sua empresa a obter o melhor sistema de controle de ponto e acesso disponível no mercado.</p>
+</div>
+<br>
+<br>
+<!--GALERIA -->
+<section class="galeria-titulo">
+  <h1>Galeria</h1>
+</section>
+<br>
+<section class="galeria">
+  <div class="box">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section class="ponto-acesso-section">
+  <div class="ponto-section">
+    <h2>Relógio de ponto</h2>
+    <div class="ponto-container">
+      <img src="img/imagem-ponto.jpg" alt="Imagem Relógio de ponto">
+      <p>O relógio de ponto é um dispositivo utilizado para registrar a entrada e saída de funcionários em uma empresa. Ele pode ser mecânico ou eletrônico, e é usado para monitorar e controlar as horas trabalhadas pelos funcionários.</p>
+    </div>
+  </div>
+
+  <div class="acesso-section">
+    <h2>Controle de acesso</h2>
+    <div class="acesso-container">
+      <img src="img/imagem-acesso.jpg" alt="Imagem Controle de acesso">
+      <p>O controle de acesso é um equipamento que serve para controlar o acesso de pessoas a determinados locais, como empresas, escolas e hospitais. Ele funciona por meio de cartões magnéticos, senhas ou reconhecimento facial.</p>
+    </div>
+  </div>
+</section>
+
+<!--WhatsApp-->
+<div class="chat-icon">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+<div class="chat-widget">
+  <div class="chat-header">
+    <h4>Converse conosco no WhatsApp</h4>
+    <button class="chat-close">Fechar</button>
+  </div>
+  <div class="chat-body">
+    <form id="whatsapp-form">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="empresa">Empresa:</label>
+        <input type="text" class="form-control" id="empresa" name="empresa" required>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Salvar Cookies -->
+<div id="cookie-overlay">
+  <div id="cookie-alert">
+    <p>Nós utilizamos cookies para melhorar sua experiência em nosso site. Clique em "Aceitar" para salvar os cookies ou "Recusar" para continuar sem cookies.</p>
+    <div class="button-container">
+      <button class="accept-button" onclick="salvarCookies()">Aceitar</button>
+      <button class="reject-button" onclick="recusarCookies()">Recusar</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Sistema para Controle de Ponto</h4>
+        <ul>
+          <li><a href="/relogio-de-ponto-digital">Relógio de Ponto Digital</a></li>
+          <li><a href="/relogio-de-ponto-biometrico">Relógio de Ponto Biométrico</a></li>
+          <li><a href="/soft-de-controle-de-ponto-online">Software de Controle de Ponto Online</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Controle de Acesso</h4>
+        <ul>
+          <li><a href="/soft-de-controle-de-acesso-online">Software de Controle de Acesso Online</a></li>
+          <li><a href="/soft-de-controle-de-acesso-offline">Software de Controle de Acesso Offline</a></li>
+          <li><a href="/relogios-de-controle-de-acesso-biometricos">Relógios de Controle de Acesso Biométricos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Crachá</h4>
+        <ul>
+          <li><a href="/cracha-pvc">Crachá PVC</a></li>
+          <li><a href="/cracha-rfid">Crachá RFID</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="/manutencao-de-relogio-de-ponto">Manutenção de Relógio de Ponto</a></li>
+          <li><a href="/manutencao-de-catracas">Manutenção de Catracas</a></li>
+          <li><a href="/instalacao-de-relogio-de-ponto">Instalação de Relógio de Ponto</a></li>
+          <li><a href="/instalacao-de-catracas">Instalação de Catracas</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Empresa X</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline text-md-right">
+          <li class="list-inline-item"><a href="/termos-de-uso">Termos de Uso</a></li>
+          <li class="list-inline-item"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+          <li class="list-inline-item"><a href="/contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
+
+

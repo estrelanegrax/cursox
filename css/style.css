@@ -1,0 +1,688 @@
+.navbar-nav {
+  justify-content: center;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/* Container do slide */
+#slide-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 400px;
+}
+
+/* Imagens do slide */
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slide-item.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slide-item.prev {
+  transform: translateX(-100%);
+}
+
+.slide-item.next {
+  transform: translateX(100%);
+}
+
+.slide-item.active.prev {
+  transform: translateX(0%);
+}
+
+.slide-item.active.next {
+  transform: translateX(0%);
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Descrição do slide */
+.slide-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-item:hover .slide-description {
+  transform: translateX(-100%);
+}
+
+/* Botões do slide */
+.slide-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slide-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slide-button:hover {
+  background-color: white;
+}
+
+.slide-button.active {
+  background-color: white;
+}
+
+/* Setas do slide */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  z-index: 2; /* aumenta o z-index da seta */
+}
+
+.slide-arrow:hover {
+  opacity: 1;
+}
+
+.slide-arrow.prev {
+  left: 10px;
+}
+
+.slide-arrow.next {
+  right: 10px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(-45deg, #000000 25%, #1d1d1d 25%, #1d1d1d 50%, #000000 50%, #000000 75%, #1d1d1d 75%, #1d1d1d);
+  opacity: 0.3;
+}
+
+
+@media (max-width: 991px) {
+  .social-icons {
+    margin-top: 64px; /* altura da barra de navegação */
+  }
+}
+
+.social-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.social-icons a.facebook {
+  background-image: url('caminho/para/o/icone/do/facebook.png');
+  background-size: 24px 24px;
+}
+
+.social-icons a.twitter {
+  background-image: url('caminho/para/o/icone/do/twitter.png');
+  background-size: 24px 24px;
+}
+
+.social-icons a.instagram {
+  background-image: url('caminho/para/o/icone/do/instagram.png');
+  background-size: 24px 24px;
+}
+
+.social-icons a:hover {
+  color: #3b5998;
+}
+
+/* Galeria*/
+.galeria-titulo {
+text-align: center;
+margin-top: 20px;
+}
+
+.box {
+display: flex;
+height: 300px;
+width: 100%; /* alterado para 100% para tornar a galeria responsiva */
+max-width: 450px; /* adicionado para limitar a largura da galeria no desktop */
+gap: 1rem;
+margin: 0 auto;
+position: relative;
+}
+
+.box > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.box > div:hover {
+flex: 5;
+transform: scale(1.1);
+}
+
+/* Adicionado para ajustar a altura das imagens */
+.box > div > img {
+height: 100%;
+}
+
+.bg1 {
+background: url("https://www.relbio.com.br/wp-content/uploads/2021/01/Relogio-de-ponto-biometrico-Homologado-portaria-373-1.jpg");
+}
+
+.bg2 {
+background: url("https://awstatic-5754.kxcdn.com/KI6bhMfTWXzpploKFgJeV0Dn6p0=/0x0/loja/pontoeletronico.net.br/prodimg/10/0168944001508848682.jpg");
+}
+
+.bg3 {
+background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoEojCaGBz7ZXB7eU-DN2kh6Ft0lr4X_AHw&usqp=CAU");
+}
+
+.bg4 {
+background: url("https://cdn.sistemawbuy.com.br/arquivos/aacf834f3d77a8ab3712452a4c6c422b/produtos/VA5ZE9/hexa-advanced-2018-2-verde-624cf242ef2d0.jpeg");
+}
+
+.bg5 {
+background: url("https://scbrasil.com/wp-content/uploads/2016/04/henry-primme.png");
+}
+
+/* Media query para ajustar a galeria em dispositivos com tela menor que 768px */
+@media (max-width: 767px) {
+.box {
+height: 200px;
+}
+
+.box > div > img {
+max-height: 100%;
+}
+}
+
+
+
+/* Parte de configuração das redes sociais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+.redes-sociais {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.item-redes-sociais {
+  position: relative;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.item-redes-sociais:hover {
+  width: 180px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.item-redes-sociais::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--color), var(--hover-color));
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.item-redes-sociais:hover::before {
+  opacity: 1;
+}
+
+.item-redes-sociais .icon {
+  font-size: 28px;
+  color: #fff;
+}
+
+.item-redes-sociais .titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 10px;
+}
+
+.item-redes-sociais:nth-child(1)::before {
+  --color: #3B5998;
+  --hover-color: #2f477a;
+}
+
+.item-redes-sociais:nth-child(2)::before {
+  --color: #55ACEE;
+  --hover-color: #3b8dc9;
+}
+
+.item-redes-sociais:nth-child(3)::before {
+  --color: #25D366;
+  --hover-color: #1c9e54;
+}
+
+.item-redes-sociais:nth-child(4)::before {
+  --color: #0077B5;
+  --hover-color: #005e94;
+}
+
+.item-redes-sociais:nth-child(5)::before {
+  --color: #C13584;
+  --hover-color: #a6296c;
+}
+
+.item-redes-sociais .icon,
+.item-redes-sociais .titulo {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .redes-sociais {
+    gap: 20px;
+  }
+  
+  .item-redes-sociais {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  
+  .item-redes-sociais .titulo {
+    display: none;
+  }
+}
+
+
+
+
+
+/* Animação para mostrar o mapa quando a localização é selecionada */
+.map-fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Estilo para os endereços */
+.endereco {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o modal de contato */
+.contato-modal {
+  background: linear-gradient(to bottom, #f7f7f7, #e1e8f1);
+  color: #333;
+}
+
+/* Estilo para o título do modal */
+.modal-title {
+  color: #007bff;
+}
+
+/* Estilo para o botão de fechar */
+.btn-close {
+  color: #007bff;
+}
+
+/* Estilo para o botão de fechar quando hover */
+.btn-close:hover {
+  color: #0056b3;
+}
+
+/* Estilo para os links do endereço */
+.endereco a {
+  color: #007bff;
+}
+
+/* Estilo para os links do endereço quando hover */
+.endereco a:hover {
+  color: #0056b3;
+}
+
+/* Estilo da parte quer fala um pouco sobre controle de ponto e acesso*/
+
+.ponto-acesso-section {
+  background-image: url('seu-imagem-de-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.ponto-section, .acesso-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ponto-section:hover, .acesso-section:hover {
+  transform: none;
+}
+
+.ponto-section img, .acesso-section img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilo para desktop */
+  .ponto-container {
+    display: flex;
+    align-items: center;
+    transform: skew(-10deg);
+  }
+  
+  .acesso-container {
+    display: flex;
+    align-items: center;
+    transform: skew(10deg);
+  }
+}
+
+/* Ajuste do Alerta cookies*/
+#cookie-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#cookie-alert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.accept-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.reject-button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Responsivo Cookies */
+@media (max-width: 767px) {
+  #cookie-alert {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .accept-button,
+  .reject-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #f2f2f2;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-md-3 {
+  width: 100%;
+  max-width: 300px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.col-md-3 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.col-md-3 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-3 ul li {
+  margin-bottom: 10px;
+}
+
+.col-md-3 ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.col-md-3 ul li a:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    width: 25%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+}
+
+
+  /* Botão zap */
+.chat-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  z-index: 9999;
+  animation: chat-icon-bounce 2s ease-in-out infinite, chat-icon-float 3s ease-in-out infinite;
+  animation-duration: 1s, 2s;
+}
+
+/* Botão zap - ajuste para celular */
+@media (max-width: 767px) {
+  .chat-icon {
+   
+    border: -1px solid #25d366;
+    line-height: 56px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .chat-icon i {
+    font-size: 40px;
+  }
+}
+
+@keyframes chat-icon-float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.chat-icon i {
+  font-size: 60px;
+  color: #fff;
+}
+
+/* Widget WhatsApp */
+.chat-widget {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px; /* alterar valor para diminuir a largura */
+  height: 400px; /* alterar valor para diminuir a altura */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: none;
+  z-index: 9998;
+}
+
+@media only screen and (max-width: 768px) {
+  .chat-widget {
+    width: 100%;
+    height: calc(70% - 80px);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat-body {
+  height: calc(100% - 50px);
+}
+
+.chat-body iframe {
+  border: none;
+}
+
+.chat-widget.open {
+  display: block;
+}
+
