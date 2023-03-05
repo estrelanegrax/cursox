@@ -1,6 +1,19 @@
-.navbar-nav {
-  justify-content: center;
+#navbar {
+  background-image: linear-gradient(to bottom, #A9A9A9, #C0C0C0);
+  border-radius: 0;
 }
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;fg
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .fixed {
   position: fixed;
   top: 0;
