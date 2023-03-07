@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleção de Equipamentos</title>
+
+    <!-- Importando StyleSheet do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Importando arquivos CSS personalizados -->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between">
+            <a class="navbar-brand" href="#">Seleção de Equipamentos</a>
+            
+            <form class="form-inline my-2 my-lg-0">
+                <select class="form-control mr-sm-2" id="select-fabricante">
+                    <option value="1">Fabricante 1</option>
+                    <option value="2">Fabricante 2</option>
+                </select>
+            </form>
+        </nav>
+		
+		
+
+        <div class="row mt-3">
+        
+            <!-- Lista de Equipamentos -->
+            <div class="col-md-6" id="equipamentos-fabricante-1">
+                <h3>Equipamentos - Fabricante 1</h3>
+
+                <div id="carousel-fabricante-1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-fabricante-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-fabricante-1" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="img/hexa.jpeg" alt="equipamento 1" class="card-img">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Descrição do Equipamento 1</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="equipamento-2.jpg" alt="equipamento 2" class="card-img">
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Descrição do Equipamento 2</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-fabricante-1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+</a>
+<a class="carousel-control-next" href="#carousel-fabricante-1" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only"></span>
+</a>
+</div>
+</div>
+        <div class="col-md-6" id="equipamentos-fabricante-2" style="display:none">
+    <h3>Equipamentos - Fabricante 2</h3>
+
+           <div id="carousel-fabricante-2" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-fabricante-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-fabricante-2" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="equipamento-3.jpg" alt="equipamento 3" class="card-img">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Descrição do Equipamento 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="equipamento-4.jpg" alt="equipamento 4" class="card-img">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Descrição do Equipamento 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-fabricante-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-fabricante-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+</div>
+<!-- Script JS do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Script JS personalizado -->
+<script>
+// Obter o elemento select
+const selectFabricante = document.getElementById("select-fabricante");
+
+// Obter as divs que contêm os equipamentos de cada fabricante
+const equipamentosFabricante1 = document.getElementById("equipamentos-fabricante-1");
+const equipamentosFabricante2 = document.getElementById("equipamentos-fabricante-2");
+
+// Adicionar um event listener para o evento "change" no select
+selectFabricante.addEventListener("change", function() {
+  // Obter o valor selecionado no select
+  const fabricanteSelecionado = selectFabricante.value;
+
+  // Esconder todos os equipamentos
+  equipamentosFabricante1.style.display = "none";
+  equipamentosFabricante2.style.display = "none";
+
+  // Mostrar os equipamentos do fabricante selecionado
+  if (fabricanteSelecionado === "1") {
+    equipamentosFabricante1.style.display = "block";
+  } else if (fabricanteSelecionado === "2") {
+    equipamentosFabricante2.style.display = "block";
+  }
+});
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
