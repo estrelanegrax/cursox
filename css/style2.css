@@ -1,0 +1,70 @@
+/* Estilo para o container do carrossel */
+#equipamentos-fabricante-1 .carousel,
+#equipamentos-fabricante-2 .carousel {
+    margin-bottom: 1rem;
+}
+
+/* Estilo para as bolas de navegação */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #007bff;
+}
+
+/* Estilo para as setas de navegação */
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100%;
+    width: 100%;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 35px;
+    color: #FFF;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 35px;
+    color: #FFF;
+}
+
+/* Estilo para as descrições dos equipamentos */
+.carousel-item .card {
+    width: 100%;
+}
+
+.carousel-item .card-body {
+    padding: 1rem;
+}
+
+.carousel-item h5 {
+    margin-bottom: .5rem;
+}
+
+.carousel-item p {
+    font-size: .875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
