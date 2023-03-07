@@ -9,7 +9,7 @@
 /* Estilo para o menu */
 
 #navbar {
-  background-image: linear-gradient(to bottom, #343a40, #adb5bd); /* Adiciona um degradê com as cores desejadas */
+  background-image: linear-gradient(to bottom, #808080, #A9A9A9); /* Adiciona um degradê com as cores desejadas */
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,6 +21,7 @@
   color: #fff; /* Alterei a cor do texto para branco */
   font-weight: 500;
   text-transform: uppercase;
+  transition: color 0.2s ease-in-out; /* Adiciona uma transição suave para a cor do texto */
 }
 
 .nav-link:hover {
@@ -35,26 +36,27 @@
 }
 
 .dropdown-item {
-  color:#333; /* Alterei a cor do texto para um cinza escuro */
-font-weight: 400;
+  color: #333; /* Alterei a cor do texto para um cinza escuro */
+  font-weight: 400;
+  transition: color 0.2s ease-in-out; /* Adiciona uma transição suave para a cor do texto */
 }
 
 .dropdown-item:hover {
-color: #007bff; /* Alterei a cor do texto para azul quando hover */
+  color: #007bff; /* Alterei a cor do texto para azul quando hover */
 }
 
 .dropdown-item.active {
-background-color: #007bff; /* Alterei a cor de fundo do item ativo para azul /
-color: #fff; / Alterei a cor do texto para branco no item ativo */
+  background-color: #007bff; /* Alterei a cor de fundo do item ativo para azul */
+  color: #fff; /* Alterei a cor do texto para branco no item ativo */
 }
 
 .dropdown-item:focus {
-outline: none; /* Remove o outline quando o item é focado */
-box-shadow: none;
+  outline: none; /* Remove o outline quando o item é focado */
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
-background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Alterei o ícone do botão para uma versão mais simples */
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Alterei o ícone do botão para uma versão mais simples */
 }
 
 
