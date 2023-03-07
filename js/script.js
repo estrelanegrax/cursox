@@ -126,3 +126,63 @@ if (!cookie_aceito) {
   chatClose.addEventListener('click', () => {
     chatWidget.classList.remove('open');
   });
+  
+   // Adiciona um evento de clique a cada elemento com a classe "card"
+  // seletor para todos os cartões
+const cards = document.querySelectorAll('.card');
+
+// para cada cartão, adicione um evento de clique
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // obtenha o valor do atributo "data-menu"
+    const menuId = card.dataset.menu;
+    // encontre o menu correspondente usando o ID
+    const menu = document.getElementById(menuId);
+    // adicione uma classe para exibir o menu
+    menu.classList.add('show');
+  });
+});
+  
+  
+//Informatizados
+
+const equipamentos = {
+  fabricante1: [
+    { descricao: 'Equipamento 1', imagem: 'imagem1.jpg' },
+    { descricao: 'Equipamento 2', imagem: 'imagem2.jpg' }
+  ],
+  fabricante2: [
+    { descricao: 'Equipamento 3', imagem: 'imagem3.jpg' },
+    { descricao: 'Equipamento 4', imagem: 'imagem4.jpg' }
+  ]
+};
+
+const fabricanteSelect = document.querySelector('#fabricante-select');
+const equipamentosContainer = document.querySelector('.equipamentos-container');
+
+fabricanteSelect.addEventListener('change', () => {
+  const fabricanteSelecionado = fabricanteSelect.value;
+  const equipamentosDoFabricante = equipamentos[fabricanteSelecionado];
+
+  equipamentosContainer.innerHTML = '';
+
+  equipamentosDoFabricante.forEach(equipamento => {
+    const equipamentoElement = document.createElement('div');
+    equipamentoElement.className = 'equipamento';
+
+    const descricaoElement = document.createElement('span');
+    descricaoElement.textContent = equipamento.descricao;
+
+    const imagemElement = document.createElement('img');
+    imagemElement.src = equipamento.imagem;
+
+    const bolaElement = document.createElement('div');
+    bolaElement.className = 'bola';
+
+    equipamentoElement.appendChild(descricaoElement);
+    equipamentoElement.appendChild(imagemElement);
+    equipamentoElement.appendChild(bolaElement);
+
+    equipamentosContainer.appendChild(equipamentoElement);
+  });
+});
