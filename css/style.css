@@ -9,7 +9,7 @@
 /* Estilo para o menu */
 
 #navbar {
-  background-color: #fff;
+  background-image: linear-gradient(to bottom, #343a40, #adb5bd); /* Adiciona um degradê com as cores desejadas */
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,17 +18,17 @@
 }
 
 .nav-link {
-  color: #333;
+  color: #fff; /* Alterei a cor do texto para branco */
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .nav-link:hover {
-  color: #555;
+  color: #ccc; /* Alterei a cor do texto para cinza claro quando hover */
 }
 
 .dropdown-menu {
-  background-color: #f8f9fa; /* Alterei a cor do background */
+  background-image: linear-gradient(to bottom, #f8f9fa, #fff); /* Adiciona um degradê com as cores desejadas */
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: #e9ecef; /* Alterei a cor do background quando hover */
+  background-color: #e9ecef;
   color: #555;
 }
 
