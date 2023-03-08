@@ -48,6 +48,30 @@
   color: #343a40;
 }
 
+.nav-link-transition {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link-transition:hover:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right, #ff6b00, #ff8c00, #ff6b00);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link-transition:hover {
+  color: #ff6b00;
+}
+
+.nav-link-transition:hover:before {
+  opacity: 1;
+}
 
 
 
