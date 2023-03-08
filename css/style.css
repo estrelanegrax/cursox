@@ -1,59 +1,46 @@
 /* Estilo para o menu */
 #navbar {
-  background-image: linear-gradient(to bottom, #2d2d2d, #4c4c4c), url('caminho/para/a/imagem.png');
-  background-repeat: repeat-x;
+  background: linear-gradient(to bottom, #404040, #636363);
 }
 
-.navbar-brand img {
-  margin-left: 10px;
+#navbar a.navbar-brand img {
+  height: 50px;
 }
 
-.navbar-nav {
-  width: 100%;
-  text-align: center;
+#navbar .nav-link {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-link {
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
+#navbar .nav-link:hover {
+  color: #d4af37;
 }
 
-.nav-link:hover {
-  background-image: linear-gradient(to bottom, #2d2d2d, #4c4c4c), url('caminho/para/a/imagem.png');
-  background-repeat: repeat-x;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  transform: translateY(-2px);
-}
-.dropdown-menu {
-  background-color: #404040;
+#navbar .dropdown-menu {
+  background-color: #222222;
 }
 
-.dropdown-menu a {
-  color: white;
+#navbar .dropdown-menu a {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
-.dropdown-item:hover {
-  background-color: #505050;
+#navbar .dropdown-menu a:hover {
+  color: #d4af37;
 }
 
-.navbar-dark .navbar-toggler-icon {
-  background-color: white;
-}
+@media (min-width: 992px) {
+  #navbar .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.navbar-toggler {
-  border-color: white;
-}
-
-.nav-item.active .nav-link, .nav-link:hover {
-  color: #e3e3e3;
-  background-color: #505050;
+  #navbar .navbar-nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 
