@@ -1,89 +1,47 @@
 /* Estilo para o menu */
 #navbar {
-  background: linear-gradient(to right, #f9f9f9, #dcdcdc);
-  border-bottom: 1px solid #eee;
+  background: linear-gradient(to bottom, #303030, #505050);
 }
 
 .navbar-brand img {
-  filter: none;
-  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
 }
 
-.navbar-brand img:hover {
-  filter: grayscale(100%);
+.navbar-nav {
+  width: 100%;
+  text-align: center;
 }
 
-.nav-link-transition {
-  transition: color 0.2s ease-in-out;
-}
-
-.nav-link-transition:hover {
-  color: #007bff;
-}
-
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.3em;
-  vertical-align: 0.25em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
+.nav-link {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 .dropdown-menu {
-  border: none;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #404040;
 }
 
 .dropdown-menu a {
-  color: #333;
+  color: white;
 }
 
-.dropdown-menu a:hover {
-  color: #007bff;
+.dropdown-item:hover {
+  background-color: #505050;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: white;
 }
 
 .navbar-toggler {
-  border: none;
+  border-color: white;
 }
 
-.navbar-toggler:focus {
-  outline: none;
+.nav-item.active .nav-link, .nav-link:hover {
+  color: #e3e3e3;
+  background-color: #505050;
 }
-
-@media (max-width: 768px) {
-  .navbar-collapse {
-    background-color: #f9f9f9;
-    border-top: 1px solid #eee;
-    padding: 10px;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-    width: 100%;
-    box-shadow: none;
-  }
-
-  .dropdown-toggle::after {
-    display: none;
-  }
-}
-
-
 
 
 
