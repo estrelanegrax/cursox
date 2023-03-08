@@ -1,6 +1,7 @@
 /* Estilo para o menu */
 #navbar {
-  background: linear-gradient(to bottom, #303030, #505050);
+  background-image: linear-gradient(to bottom, #2d2d2d, #4c4c4c), url('caminho/para/a/imagem.png');
+  background-repeat: repeat-x;
 }
 
 .navbar-brand img {
@@ -16,8 +17,20 @@
   font-weight: bold;
   color: white;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
+.nav-link:hover {
+  background-image: linear-gradient(to bottom, #2d2d2d, #4c4c4c), url('caminho/para/a/imagem.png');
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  transform: translateY(-2px);
+}
 .dropdown-menu {
   background-color: #404040;
 }
