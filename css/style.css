@@ -7,8 +7,9 @@
   width: 100%;
 }
 /* Estilo para o menu */
+
 #navbar {
-  background-image: linear-gradient(to bottom, #343a40, #adb5bd); /* Adiciona um degradê com as cores desejadas */
+  background-image: linear-gradient(to bottom, #5cb85c, #343a40); /* Adiciona um degradê com as cores desejadas */
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,28 +23,26 @@
   text-transform: uppercase;
 }
 
-.nav-link:hover, .nav-link:focus {
-  color: #ccc; /* Alterei a cor do texto para cinza claro quando hover ou focus */
-  transition: color 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+.nav-link:hover {
+  color: #d9d9d9; /* Alterei a cor do texto para cinza claro quando hover */
 }
 
 .dropdown-menu {
-  background-image: linear-gradient(to bottom, #f8f9fa, #fff); /* Adiciona um degradê com as cores desejadas */
+  background-color: #f7f7f7;
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
-  color: #343a40; /* Alterei a cor do texto para um tom de cinza mais escuro */
-  transition: color 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+  color: #333;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-  color: #007bff; /* Alterei a cor do texto para azul quando hover ou focus */
-  background-color: transparent; /* Remove o fundo do item selecionado */
-  transition: color 0.3s ease-in-out; /* Adiciona um efeito de transição suave */
+.dropdown-item:hover {
+  background-color: #d9d9d9;
 }
+
+
 
 
 
