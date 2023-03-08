@@ -7,9 +7,8 @@
   width: 100%;
 }
 /* Estilo para o menu */
-
 #navbar {
-  background-image: linear-gradient(to bottom, #5cb85c, #343a40); /* Adiciona um degradê com as cores desejadas */
+  background-image: linear-gradient(to bottom, #6C757D, #F8F9FA);
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,28 +17,35 @@
 }
 
 .nav-link {
-  color: #fff; /* Alterei a cor do texto para branco */
+  color: #c4c4c4;
   font-weight: 500;
   text-transform: uppercase;
+  background: linear-gradient(to bottom, #c4c4c4, #8c8c8c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
-  color: #d9d9d9; /* Alterei a cor do texto para cinza claro quando hover */
+  color: #ffd166;
+  background: linear-gradient(to bottom, #ffd166, #f6b93b);
 }
 
 .dropdown-menu {
-  background-color: #f7f7f7;
+  background-color: #F8F9FA;
   border: none;
   border-radius: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
-  color: #333;
+  color: #343A40;
 }
 
 .dropdown-item:hover {
-  background-color: #d9d9d9;
+  background-color: #B8B8B8;
+  color: #fff;
 }
 
 
